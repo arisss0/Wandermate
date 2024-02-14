@@ -19,6 +19,7 @@ const ProfileDetails = () => {
   useEffect(() => {
     const storedAnswers = localStorage.getItem("answers");
     const parsedAnswers = storedAnswers ? JSON.parse(storedAnswers) : {};
+    console.log('test')
 
     setAnswers(parsedAnswers);
   }, []);
